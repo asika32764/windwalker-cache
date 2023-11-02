@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
     bootstrap="vendor/autoload.php"
-    convertErrorsToExceptions="true"
-    convertNoticesToExceptions="true"
-    convertWarningsToExceptions="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.4/phpunit.xsd"
+    cacheDirectory=".phpunit.cache"
 >
     <php>
         <ini name="error_reporting" value="-1"/>
 
-<!--        <env name="REDIS_ENABLED" value="1" />-->
-<!--        <env name="MEMCACHED_ENABLED" value="1" />-->
+<!--        <env name="REDIS_ENABLED" value="0" />-->
+<!--        <env name="MEMCACHED_ENABLED" value="0" />-->
     </php>
 
     <testsuites>
